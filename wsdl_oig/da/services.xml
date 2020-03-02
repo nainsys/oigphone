@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.5.4  Built on : Dec 19, 2010 (08:18:42 CET) -->
+<serviceGroup>
+    <service name="DataAccessService">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="com.mitel.oig.da.DataAccessServiceMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">com.mitel.oig.da.DataAccessServiceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="searchFirstNTuples" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mitel.com/oig/da/DataAccessService">
+            <actionMapping>urn:searchFirstNTuples</actionMapping>
+            <outputActionMapping>http://mitel.com/oig/da/DataAccessService/DataAccessServicePortType/searchFirstNTuplesResponse</outputActionMapping>
+        </operation>
+        <operation name="getFirstTuple" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mitel.com/oig/da/DataAccessService">
+            <actionMapping>urn:getFirstTuple</actionMapping>
+            <outputActionMapping>http://mitel.com/oig/da/DataAccessService/DataAccessServicePortType/getFirstTupleResponse</outputActionMapping>
+        </operation>
+        <operation name="getDeiMetaData" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mitel.com/oig/da/DataAccessService">
+            <actionMapping>urn:getDeiMetaData</actionMapping>
+            <outputActionMapping>http://mitel.com/oig/da/DataAccessService/DataAccessServicePortType/getDeiMetaDataResponse</outputActionMapping>
+        </operation>
+        <operation name="searchNextNTuples" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mitel.com/oig/da/DataAccessService">
+            <actionMapping>urn:searchNextNTuples</actionMapping>
+            <outputActionMapping>http://mitel.com/oig/da/DataAccessService/DataAccessServicePortType/searchNextNTuplesResponse</outputActionMapping>
+        </operation>
+        <operation name="getNextTuple" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mitel.com/oig/da/DataAccessService">
+            <actionMapping>urn:getNextTuple</actionMapping>
+            <outputActionMapping>http://mitel.com/oig/da/DataAccessService/DataAccessServicePortType/getNextTupleResponse</outputActionMapping>
+        </operation>
+        <operation name="deleteTuple" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mitel.com/oig/da/DataAccessService">
+            <actionMapping>urn:deleteTuple</actionMapping>
+            <outputActionMapping>http://mitel.com/oig/da/DataAccessService/DataAccessServicePortType/deleteTupleResponse</outputActionMapping>
+        </operation>
+        <operation name="getAllTuples" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mitel.com/oig/da/DataAccessService">
+            <actionMapping>urn:getAllTuples</actionMapping>
+            <outputActionMapping>http://mitel.com/oig/da/DataAccessService/DataAccessServicePortType/getAllTuplesResponse</outputActionMapping>
+        </operation>
+        <operation name="getNotification" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mitel.com/oig/da/DataAccessService">
+            <actionMapping>urn:getNotification</actionMapping>
+            <outputActionMapping>http://mitel.com/oig/da/DataAccessService/DataAccessServicePortType/getNotificationResponse</outputActionMapping>
+        </operation>
+        <operation name="registerDeisForNotification" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mitel.com/oig/da/DataAccessService">
+            <actionMapping>urn:registerDeisForNotification</actionMapping>
+            <outputActionMapping>http://mitel.com/oig/da/DataAccessService/DataAccessServicePortType/registerDeisForNotificationResponse</outputActionMapping>
+        </operation>
+        <operation name="deregisterDeisForNotification" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mitel.com/oig/da/DataAccessService">
+            <actionMapping>urn:deregisterDeisForNotification</actionMapping>
+            <outputActionMapping>http://mitel.com/oig/da/DataAccessService/DataAccessServicePortType/deregisterDeisForNotificationResponse</outputActionMapping>
+        </operation>
+        <operation name="updateTuple" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mitel.com/oig/da/DataAccessService">
+            <actionMapping>urn:updateTuple</actionMapping>
+            <outputActionMapping>http://mitel.com/oig/da/DataAccessService/DataAccessServicePortType/updateTupleResponse</outputActionMapping>
+        </operation>
+        <operation name="registerNotificationHandler" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mitel.com/oig/da/DataAccessService">
+            <actionMapping>urn:registerNotificationHandler</actionMapping>
+            <outputActionMapping>http://mitel.com/oig/da/DataAccessService/DataAccessServicePortType/registerNotificationHandlerResponse</outputActionMapping>
+        </operation>
+        <operation name="insertTuple" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://mitel.com/oig/da/DataAccessService">
+            <actionMapping>urn:insertTuple</actionMapping>
+            <outputActionMapping>http://mitel.com/oig/da/DataAccessService/DataAccessServicePortType/insertTupleResponse</outputActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

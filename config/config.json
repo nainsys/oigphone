@@ -1,0 +1,62 @@
+{
+  "session": {
+      "_soap_client_XX": null,
+      "sessionId_XX": null,
+      "endpoint_XX": null,
+      "server": "192.168.10.101",
+      "protocol_XX": "https",
+      "protocol": "http",
+"applicationName": "BRIGHTTECH",
+"companyName": "MKCOMMS",
+"applicationPassword": "admin@4282",
+"localPassword": "admin@4282",      
+"certificate": "-----BEGIN CERTIFICATE-----\nMIIDUTCCAjmgAwIBAgIGAVr6+6nVMA0GCSqGSIb3DQEBBAUAMFcxCzAJBgNVBAYT\nAkNBMQswCQYDVQQIEwJPTjEPMA0GA1UEBxMGT3R0YXdhMQ4wDAYDVQQKEwVNaXRl\nbDEMMAoGA1UECwwDUiZEMQwwCgYDVQQDEwNNQ1MwIBcNMTIwMjAxMTI0NDQxWhgP\nMjExMjAyMDExMjQ0NDFaMHoxFTATBgNVBAYTDEtvcmVhLCBTb3V0aDEOMAwGA1UE\nCBMFU2VvdWwxDjAMBgNVBAcTBVNlb3VsMRAwDgYDVQQKEwdNS0NPTU1TMQwwCgYD\nVQQLDANSJkQxITAfBgNVBAMTGEJSSUdIVFRFQ0g6LS06Tm9uVHJ1c3RlZDCCASIw\nDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAIsKVRKOKo/Y+xd2+zrVLt+Qq5/Q\niru+RfmthYylzdrSo9lSWGSZ1ASZ09L6rRzBWh1bv7D+SkAGr88Zt22FrBls7Q0u\nV40d3Zh06O2tf9dcCPyqp2D3MT/71BFOXaOGrdvzmP+YFi6f95novMSwFFFGykbq\nc8DRF7oaiuRIgTA8IL3MLmsoLXamGN0hzM3KjNZSwh+AOkkOGBGyp0HIuI1tYMTP\nXTCj2GXMKHgJ2gvdytZntrkvwjqQQSCXFoqN/j+1zW5amCcQnVaAYBdnRtHONHPn\n9zBm5nckKsKbGyAtgDvz8VBvOZuOjfb1+zhdgnhFQ1fkFOhNa2voG3536bUCAwEA\nATANBgkqhkiG9w0BAQQFAAOCAQEAjW07Pv0yzpNJa8Ra36wMOHkANGWh5II3EaNc\n01B9lv665ZwWOeXlRUUuNhrWwRW5NgLJkjE78leWgJjBj7G3BN9+xy7sig3YE46R\nBUjoHdSam0wk82MMrr34MNZDiymw7PiclXCd1v+XFRBdFrjnIGjo3+KVPS8Shv32\n3kKhvp/56GBUUCICevA9tzGz8p/oAUR5cAWA+x5TfCrkQYpL9knJIxrXZpkCgA43\npliTd687fqrX52O/iDbZUI4KkfIwSSXRR88/a38OsaDh2VHOmjDpfTm3fzxIpK0N\n+e3XBTtO4fAVxF912VIxzked2H7g2ou+lyzss9zPtSZqQLAPkw==\n-----END CERTIFICATE-----",
+      
+      "servicePath_XX": "/axis2/services/SessionService/",
+      "servicePath": "/mitel/oig/session/SessionService/",
+      "wsdl_XX": "./wsdl_oig/sessionManagement/SessionService.wsdl",
+      "wsdl": "http://192.168.10.101/mitel/oig/session/SessionService.wsdl",
+      "version": "4.0",
+      "autoAuthenticate": true,
+"privateKey": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCLClUSjiqP2PsX\ndvs61S7fkKuf0Iq7vkX5rYWMpc3a0qPZUlhkmdQEmdPS+q0cwVodW7+w/kpABq/P\nGbdthawZbO0NLleNHd2YdOjtrX/XXAj8qqdg9zE/+9QRTl2jhq3b85j/mBYun/eZ\n6LzEsBRRRspG6nPA0Re6GorkSIEwPCC9zC5rKC12phjdIczNyozWUsIfgDpJDhgR\nsqdByLiNbWDEz10wo9hlzCh4CdoL3crWZ7a5L8I6kEEglxaKjf4/tc1uWpgnEJ1W\ngGAXZ0bRzjRz5/cwZuZ3JCrCmxsgLYA78/FQbzmbjo329fs4XYJ4RUNX5BToTWtr\n6Bt+d+m1AgMBAAECggEAXnU/hGKW4bDMLI3FcZugw3s6TVFU3uUODuhmoT2HE1Ek\nxSBfMsEau6FxuZRZhP6KZQWOvgSTltm0GKNk7P/yAjfw95JzIkiW4dsS312OS1WY\nOWcKXSKyD8DauoMdtFlrxdDBMWs2Lqi4gpQNoiXpN6o7A2CGEQk78E/V6e6j7Yr5\n+tL05KWiqvyVJUnnTvsd5rIzsf+5kE6BvkGbsOxeHIrkuDe2VKVUHApegG/iGTCR\n903okmMUefC9zqOBWS0+xTMc2C72KmsvjkkRHz64+MP127EJavY6MG/IfOHOo1wM\nXSmVt7hxCb7isY/UleByAh5Go1hIh9l7NWOhNX+XRQKBgQDR20QtNDTOpoCLOCUt\n94fHLDp3Jp2ZpEeRC7jarU7YSDXQ14WISB5cSA7VzF0/lUvSCy/JqdKx2Tr+RxMN\ncnnIIpKmPTm4XSitSPRSHEM+2HyA/ldpppWhv0YoGKYRsuuj/V74BXvBmWNJTSbW\nmjXfipP5KMDGXN6Jsmmwc8dNwwKBgQCpnNroU20zrJmJyvbVKvcJM/4eCrUUbwaO\nrYBCZxBDSfGBM3CPNmM+9uttgZbGHwrWmarGIz4i6uWLEjmAHhWIvf7UxCuMs4xy\nSi5pEXH8dzZUBQp7ubFQ0tWJG8d9R3/4vsTjTELXRsVQuVG3GjIl1mjpiBOseSYJ\nZjJlZoKbJwKBgQCf4ml38z2EcDChYR5afiuRYK4Ol3odU58+7+pfmQjoGWP/ACT5\nZtDSyAeddj1ZMxr4JZO8FkmzPGkI0AfBCAWmqEiIpT7zqu5Rz7JtWKEXIYMCGEVq\n9gMsn3kJFXZ5J5MGdwTC/BKEtqOBdmlvuT/wVzlT7Guq9ZiK2kZRrHQdVwKBgDbh\n0FuYkx9DXDMf/5qeWm0Z68IgyNMh0cddEMFrw/Fh/clGscdFW/vFvgwjAHx/Euy5\nsG6IfNSjmT7U2NJB6cnjYI/MIiNW/b0Fj9rjkDSXBndNYkUCowN6FSpWWMiK2DfO\n0rqRtJcgCTzDmlNbIJrps+zM4UDPuqUT8n6pGt3FAoGBAL9RSfcKmBnbxpXULQuu\n+ggXNIfWV14Wu9gaeyyKzzK/s0p6I4DlSnv0FiTXFIlqSM4+exbJ88K2i4PhdP20\nfFiV9fajFllocAS014FQGDIJA574jgBWOheNB2VeG1vjBlf6zu+8kqo+c63bi2Jh\nirVZCCheKg3xtXZlsTeoOW91\n-----END PRIVATE KEY-----",
+      "signedAuthenticationData": null,
+      "authenticationData": null,
+      "autoKeepAlive": true,
+      "sessionTimer": 5,
+      "_keepAliveSet": null,
+      "serviceVersionsResults": null,
+      "lastError": null,
+      "__descriptions": {
+        "endpoint": "Current OIG implementation returns an invalid endpoint in the returned WSDL, this is calculated later from protocol, server and servicePath",
+        "server": "Required",
+        "sessionTimer": "In seconds",
+        "_keepAliveSet": "set to Timeout after setInterval for autoKeepAlive"
+      }
+  },
+  "callControl": {
+      "_soap_client_XX": null,
+      "sessionClient_XX": null,
+      "sessionId_XX": null,
+      "endpoint": null,
+      "server": "192.168.10.101",
+      "protocol_XX": "https",
+      "protocol": "http",
+"applicationName": "BRIGHTTECH",
+"companyName": "MKCOMMS",
+"applicationPassword": "admin@4282",
+"localPassword": "admin@4282",
+      "servicePath_XX": "/axis2/services/StandardCCService/",
+      "servicePath": "/mitel/oig/cc/StandardCCService/",
+      "wsdl_XX": "./wsdl_oig/standard/StandardCCService.wsdl",
+      "wsdl": "http://192.168.10.101/mitel/oig/cc/StandardCCService.wsdl",
+      "version": "4.0",
+      "lastError": null,
+      "timeout": 45000,
+      "getEventContinuously": true,
+      "__descriptions": {
+        "endpoint": "Current OIG implementation returns an invalid endpoint in the returned WSDL, this is calculated later from protocol, server and servicePath",
+        "server": "Required",
+        "timeout": "In seconds"
+      }
+  }
+}

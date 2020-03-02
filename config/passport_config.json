@@ -1,0 +1,18 @@
+{
+  "btscreen": {
+    "username": "root",
+    "password": "admin@4282",
+    "database": "btscreen",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  },
+  "f1rental": {
+    "username": "root",
+    "password": "admin@4282",
+    "database": "f1rental",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  }
+}

@@ -1,0 +1,78 @@
+body {
+    font-family: 'RobotoDraft', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    padding-top: 4px;
+    margin-bottom: 12px;
+}
+
+.card {
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+}
+
+.md-outline.select-wrapper+label {
+    top: .5em !important;
+    z-index: 2 !important;
+}
+
+a:active {
+    font-family: "나눔고딕", "seoul", "arial";
+    font-size: 14px;
+    line-height: 160%;
+    color: #5351e7;
+    text-decoration: none;
+}
+
+a:link {
+    font-family: "나눔고딕", "seoul", "arial";
+    font-size: 14px;
+    line-height: 160%;
+    color: #252525;
+    text-decoration: none;
+}
+
+a:visited {
+    font-family: "나눔고딕", "seoul", "arial";
+    font-size: 14px;
+    line-height: 160%;
+    color: #573131;
+    text-decoration: none;
+}
+
+a:hover {
+    font-family: "나눔고딕", "seoul", "arial";
+    font-size: 14px;
+    line-height: 160%;
+    color: #3399FF;
+    text-decoration: none;
+}
+
+select {
+    font-size: 14px;
+    color: #050505;
+    background-color: ffffff;
+    font-weight: none;
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+    border-top: 1px solid #444444;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border-bottom: 1px solid #444444;
+    padding: 7px;
+    text-align: center;
+}
+
+tr {
+    height: 20px;
+}

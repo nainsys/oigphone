@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style type="text/css">
+    .my_table {
+      border-spacing: 0px;
+      border: 1px solid #000;
+    }
+
+    .my_table td {
+      padding: 0px;
+    }
+  </style>
+  <!-- <script src="/socket.io/socket.io.js"></script>  -->
+  <script language="JavaScript">
+    var ImageCount = 15;
+    var g_bLogin = 0;
+    var g_TelNo = ""; // 전화번호
+    var g_IsOnline = 0;
+    var g_bHoldCall = 0;
+    /*
+    //Socket.io 선언======================
+    var socket = io();
+
+    g_InOutBound = 0;
+    CTI_SUCCESS = 0;
+    CTI_FAIL = -1;
+
+    // 서버로 자신의 정보를 전송한다.
+    socket.emit("login", {
+      name: makeRandomName(),
+      userid: "nainsys@gmail.com"
+    });
+
+    // 서버로부터의 메시지가 수신되면
+    socket.on("login", function(data) {
+      Agtinfo.innerText = "로그인 되었습니다";
+    });
+
+    socket.on("oigmsg", function(data) {
+      Agtinfo.innerText = +data;
+    });
+
+    function makeRandomName() {
+      var name = "";
+      var possible = "abcdefghijklmnopqrstuvwxyz";
+      for (var i = 0; i < 3; i++) {
+        name += possible.charAt(Math.floor(Math.random() * possible.length));
+      }
+      return name;
+    }
+*/
+    function EnabledImage(val) {
+      document.getElementById("st" + val).disabled = false;
+      document.getElementById("st" + val).src = "/images/menu" + val + "_on.gif";
+    }
+
+    function DisabledImage(val) {
+      document.getElementById("st" + val).disabled = true;
+      document.getElementById("st" + val).src = "/images/menu" + val + "_off.gif";
+    }
+
+    function OnLoad() {
+      DisabledImage(11);
+      DisabledImage(12);
+      DisabledImage(13);
+      DisabledImage(14);
+      //DisabledImage(15);    //로그아웃
+      Agtinfo.innerText = "휴식중";
+    }
+
+    function FnCall(cmd) {
+      try {
+        bPress = true;
+        switch (cmd) {
+          case 1: // 로그인/로그아웃
+            //alert("먼저 로그인 해 주세요!");
+            EnabledImage(15);
+            Agtinfo.innerText = "로그인 중";
+            Agtinfo.innerText = "휴식중";
+            frmTop.action = "/webphone?cmd=login";
+            frmTop.submit();
+            g_bLogin = true;
+            EnabledImage(4);
+            EnabledImage(5);
+            EnabledImage(6);
+            EnabledImage(7);
+            //socket.emit("oigmsg", "로그인");
+            break;
+          case 2: // 업무
+            //socket.emit("oigmsg", "업무중");
+            Agtinfo.innerText = "업무중";
+            break;
+          case 3: // 휴식
+            //socket.emit("oigmsg", "휴식중");
+            Agtinfo.innerText = "휴식중";
+            break;
+          case 4: // 전화걸기
+            //OpenSubWindow("../cti/Dial.jsp", "wndDail", "width=220, height=50, Toolbar=No, resizable=0");
+            Agtinfo.innerText = "전화걸기";
+            break;
+          case 5: // 전화끊기
+            Agtinfo.innerText = "전화끊기";
+            break;
+          case 6: // 전화받기
+            Agtinfo.innerText = "전화받기";
+            break;
+          case 7: // 보류
+            Agtinfo.innerText = "전화보류";
+            break;
+          case 8: // 재응답
+            Agtinfo.innerText = "재응답";
+            break;
+          case 9: // 호전환
+            Agtinfo.innerText = "호전환";
+            break;
+          case 10: // 컨설트
+            Agtinfo.innerText = "컨설트";
+            break;
+          case 11: // 호회수
+            Agtinfo.innerText = "호회수";
+            break;
+          case 12: // 3자통화
+            Agtinfo.innerText = "3자통화";
+            break;
+          case 13: // 3자회수
+            Agtinfo.innerText = "3자회수";
+            break;
+          case 14: // 재통화
+            Agtinfo.innerText = "재통화";
+            break;
+          case 15: // 로그아웃
+            frmTop.action = "/webphone?cmd=logout";
+            frmTop.submit();
+            break;
+        }
+      } catch (e) {
+      } finally {
+        bPress = false;
+      }
+    }
+  </script>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Rental</title>
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/mdb.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body onload="OnLoad()">
+    <form name="frmTop" method="post">
+      <table class="my_table" background="/images/top_bg.gif">
+        <tr>
+          <td width="15"></td>
+          <td><img src="/images/top_space.gif" width="1" height="47" border="0" alt="" /></td>
+          <td><input type="image" id="st1" name="stn" src="/images/menu1_on.gif" state="0" onclick="FnCall(1); return false;" width="55" height="47" /></td>
+          <td><img src="/images/top_space.gif" width="1" height="47" border="0" alt="" /></td>
+          <td><input type="image" id="st2" name="stn" src="/images/menu2_on.gif" state="0" onclick="FnCall(2); return false;" width="55" height="47" /></td>
+          <td><img src="/images/top_space.gif" width="1" height="47" border="0" alt="" /></td>
+          <td><input type="image" id="st3" name="stn" src="/images/menu3_on.gif" state="0" onclick="FnCall(3); return false;" width="55" height="47" /></td>
+          <td><img src="/images/top_space.gif" width="1" height="47" border="0" alt="" /></td>
+          <td><input type="image" id="st4" name="stn" src="/images/menu4_on.gif" state="0" onclick="FnCall(4); return false;" width="55" height="47" /></td>
+          <td><img src="/images/top_space.gif" width="1" height="47" border="0" alt="" /></td>
+          <td><input type="image" id="st5" name="stn" src="/images/menu5_on.gif" state="0" onclick="FnCall(5); return false;" width="55" height="47" /></td>
+          <td><img src="/images/top_space.gif" width="1" height="47" border="0" alt="" /></td>
+          <td><input type="image" id="st6" name="stn" src="/images/menu6_on.gif" state="0" onclick="FnCall(6); return false;" width="55" height="47" /></td>
+          <td><img src="/images/top_space.gif" width="1" height="47" border="0" alt="" /></td>
+          <td><input type="image" id="st7" name="stn" src="/images/menu7_on.gif" state="0" onclick="FnCall(7); return false;" width="55" height="47" /></td>
+          <td><img src="/images/top_space.gif" width="1" height="47" border="0" alt="" /></td>
+          <td><input type="image" id="st8" name="stn" src="/images/menu8_on.gif" state="0" onclick="FnCall(8); return false;" width="55" height="47" /></td>
+          <td><img src="/images/top_space.gif" width="1" height="47" border="0" alt="" /></td>
+          <td><input type="image" id="st9" name="stn" src="/images/menu9_on.gif" state="0" onclick="FnCall(9); return false;" width="55" height="47" /></td>
+          <td><img src="/images/top_space.gif" width="1" height="47" border="0" alt="" /></td>
+          <td><input type="image" id="st10" name="stn" src="/images/menu10_on.gif" state="0" onclick="FnCall(10); return false;" width="55" height="47" /></td>
+          <td><img src="/images/top_space.gif" width="1" height="47" border="0" alt="" /></td>
+          <td><input type="image" id="st11" name="stn" src="/images/menu11_on.gif" state="1" onclick="FnCall(11); return false;" width="55" height="47" /></td>
+          <td><img src="/images/top_space.gif" width="1" height="47" border="0" alt="" /></td>
+          <td><input type="image" id="st12" name="stn" src="/images/menu12_on.gif" state="1" onclick="FnCall(12); return false;" width="55" height="47" /></td>
+          <td><img src="/images/top_space.gif" width="1" height="47" border="0" alt="" /></td>
+          <td><input type="image" id="st13" name="stn" src="/images/menu13_on.gif" state="1" onclick="FnCall(13); return false;" width="55" height="47" /></td>
+          <td><img src="/images/top_space.gif" width="1" height="47" border="0" alt="" /></td>
+          <td><input type="image" id="st14" name="stn" src="/images/menu14_on.gif" state="0" onclick="FnCall(14); return false;" width="55" height="47" /></td>
+          <td><img src="/images/top_space.gif" width="1" height="47" border="0" alt="" /></td>
+          <td><input type="image" id="st15" name="stn" src="/images/menu15_on.gif" state="1" onclick="FnCall(15); return false;" width="55" height="47" /></td>
+          <td><img src="/images/top_space.gif" width="1" height="47" border="0" alt="" /></td>
+          <td width="15"></td>
+        </tr>
+      </table>
+
+      <table class="my_table" bgcolor="F0F0F0" width="100%">
+        <tr>
+          <td height="5px"></td>
+        </tr>
+        <tr>
+          <td width="7px"></td>
+          <td>
+            <div id="btnStateMsg"></div>
+          </td>
+          <td align="left" width="150">
+            <div id="custinfo"></div>
+          </td>
+          <td align="left" width="100">
+            <div><label id="Agtinfo">Agent Info</label></div>
+          </td>
+          <td align="left" width="150">
+            <div id="dial_nowtime"></div>
+          </td>
+          <td align="right" width="500">
+            사용자 :
+            <font color="blue"><b><%=user.name%></b></font>
+            (<%=user.username%> / <%=user.agt_id%>) &nbsp; (내선번호:<%=user.phonedn%>) &nbsp; Ver 1.0.0
+          </td>
+          <td width="50"></td>
+        </tr>
+        <tr>
+          <td height="5"></td>
+        </tr>
+      </table>
+    </form>
+
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/popper.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/mdb.min.js"></script>
+  </body>
+</html>
